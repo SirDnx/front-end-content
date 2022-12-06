@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Descrição curta sobre o site-->
+    <meta name="description" content="tags importantes do HTML">
+    <!--palavras-chave que ajudarão os mecânismos de busca do google-->
+    <meta name="keywords" content="html, tags html, tags importantes html, simbolos html, semantica html">
+    <!--assinatura do criador do site-->
+    <meta name="author" content="SirDnx">
+    <title>Conteúdo de HTML</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/apple-touch-icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Conteúdo de HTML</h1>     
+    </header>
+    <main>
+        <div id="caixa-formatacao">
+            <section>
+                <strong class="destaque">Tags de formatação:</strong>
+                    <article id="tags-formatacao">
+                        <!--Tags <hr> e <br> não são recomendadas por não serem semânticas.
+                        hr cria uma linha horizontal na página e br uma quebra de linha.
+                        É possível fazer as duas coisas por css-->
+                        <p>texto sobrescrito: x<sup>2</sup></p>
+                        <p>texto subscrito H<sub>2</sub>O</p>
+                        <!--Dá pra fazer com css-->
+                        <p><mark>texto marcado</mark></p>
+                        <!--Tag strong = conteúdo importante, semântico-->
+                        <p><strong>parágrafo com negrito</strong></p>
+                        <!--Não é semântico, não recomendado-->
+                        <p><em>parágrafo com itálico</em></p>
+                        <!--Não semântico, dá pra fazer com css-->
+                        <p>Texto deletado: De <del>R$29,99</del> por R$19,99</p>
+                        <!--Não semântico-->
+                        <p><ins>parágrafo com inserido</ins></p>
+                        <!--Não semântico-->
+                        <p><small>parágrafo com small</small></p>
+                    </article>
+            </section>
+        </div>     
+        <div id="caixa-pai">
+            <div id="caixa-simbolos">
+                <section>
+                    <strong class="destaque">Códigos de símbolos:</strong>
+                    <article id="tags-simbolos">
+                        <p>Simbolo de marca registrada: &reg;</p>
+                        <p>Símbolo de copyright: &copy;</p>
+                        <p>Símbolo de marca registrada em inglês: &trade;</p>
+                        <p>Símbolo de euro: &euro;</p>
+                        <p>Símbolo de libra: &pound;</p>
+                        <p>Sómbolo de moeda chinesa: &yen;</p>
+                        <p>Símbolo da moeda americana: &cent;</p>
+                        <p>Símbolo delta: &Delta;</p>
+                        <p>Seta apontando pra cima: &uparrow;</p>
+                        <p>Seta apontando pra baixo: &downarrow;</p>
+                        <p>Seta apontando pra direita: &rightarrow;</p>
+                        <p>Seta apontando pra esquerda: &leftarrow;</p>
+                    </article>
+                </section>
+            </div>
+            <div id="caixa-emojis-favicon">
+                <section>
+                    <strong class="destaque">Sites para emoji:</strong>
+                    <article class="link-emoji-favicon">
+                        <p><a href="https://emojipedia.org/" target="_blank" rel="external" title="ir para site" class="links">emojipedia</a></p>
+                    </article>
+                    <strong class="destaque">Sites para favicon:</strong>
+                    <article class="link-emoji-favicon">
+                        <ul>
+                            <li><a href="https://iconarchive.com/" target="_blank" rel="external" title="ir para site" class="links">Icon Archive</a>
+                            <li><a href="https://www.favicon.cc/" target="_blank" rel="external" title="ir para site" class="links">Favicon cc</a>
+                            <li><a href="https://favicon.io/" target="_blank" rel="external" title="ir para site" class="links">Favicon.io</a>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <div id="caixa-tags-palhetas">
+            <section>
+                <strong class="destaque">Tags úteis</strong>              
+                    <article id="tags-uteis">
+                        <code>Tag &lt;code&gt; e &lt;pre&gt;<pre>
+                            name = input('Qual o seu nome? ')
+                            print(f'Olá, {name}!')  </pre></code>
+                        <p>tag &lt;q&gt; pra citação: <q>Ao redor do buraco tudo é beira</q>.</p>
+                        <p>Tag &lt;abbr&gt; com parâmetro title:<abbr title="Cascading Style Sheet">CSS</abbr></p>
+                    </article>
+                <strong class="destaque">Sites para palhetas:</strong>
+                    <article id="site-palhetas">
+                        <ul>
+                            <li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external" title="ir para site" class="links">Color.Adobe.com</a></li>
+                            <li><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="external" title="ir para site" class="links">Paletton</a></li>
+                            <li><a href="https://coolors.co/" target="_blank" rel="external" title="ir para site" class="links">Coolors</a></li>
+                            <li><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-br" target="_blank" rel="external" title="ir para site" class="links">Extensão do Google Colorzilla</a></li>
+                        </ul>
+                    </article>
+            </section>
+        </div>   
+    </main>
+    <footer id="rodape">
+        <p id="texto-rodape"><a href="https://www.linkedin.com/in/daniel-moraes-835b6b241/" target="_blank" rel="external" title="ir para Linkedin">&copy; Daniel Moraes - ADS Full Stack</a></p>
+    </footer>
+</body>
+</html>
