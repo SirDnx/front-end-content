@@ -1,0 +1,8 @@
+.footer__link{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+}

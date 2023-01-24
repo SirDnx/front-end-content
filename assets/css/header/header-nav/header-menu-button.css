@@ -1,0 +1,11 @@
+.header__menu--button{
+    position: fixed;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s all ease;
+}

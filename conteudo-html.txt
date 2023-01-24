@@ -1,4 +1,6 @@
 ----https://www.flaticon.com/br/----
+----https://icons8.com.br/----
+
 
 ==>Banco de imagens e vídeos gratuítos
 
@@ -20,5 +22,7 @@ https://www.photopea.com/
 
 https://www.image-map.net/
 
+==> Símbolos Unicode
 
+https://unicode-table.com/en/
 

@@ -1,0 +1,8 @@
+.header__list{
+    left: 0;
+    position: absolute;
+    padding-left: 4px;
+    margin-top: 50px;
+    top: 0;
+    width: 100%;
+}

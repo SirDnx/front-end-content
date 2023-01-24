@@ -1,0 +1,17 @@
+.header{
+    box-sizing: initial;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 90%;
+    background-color: var(--darkerpurple);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-x: hidden;
+    transition: width .5s ease;
+    width: 70px;
+}
+
+.header.active{
+    width: 300px;
+}

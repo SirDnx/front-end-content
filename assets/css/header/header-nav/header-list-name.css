@@ -1,0 +1,11 @@
+.header__list--name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+

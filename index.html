@@ -1,108 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Descrição curta sobre o site-->
-    <meta name="description" content="tags importantes do HTML">
-    <!--palavras-chave que ajudarão os mecânismos de busca do google-->
-    <meta name="keywords" content="html, tags html, tags importantes html, simbolos html, semantica html">
-    <!--assinatura do criador do site-->
+    <!--short descriptio about the site-->
+    <meta name="description" content="important HTML tags and content about frontend development">
+    <!--keywords that will help google's search mechanisms-->
+    <meta name="keywords" content="html, tags html, important html tags, html symbols, semantic html">
+    <!--author's signature-->
     <meta name="author" content="SirDnx">
-    <title>Conteúdo de HTML</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon" href="img/apple-touch-icon.png" type="image/x-icon">
+    <title>HTML content</title>
+    <link rel="shortcut icon" href="assets/img/apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/header/header.css">
+    <link rel="stylesheet" href="assets/css/header/header-nav/header-nav.css">
+    <link rel="stylesheet" href="assets/css/header/header-nav/header-menu-button.css">
+    <link rel="stylesheet" href="assets/css/header/header-nav/menu-button-icon.css">
+    <link rel="stylesheet" href="assets/css/header/header-nav/header-list.css">
+    <link rel="stylesheet" href="assets/css/header/header-nav/header-list-item.css">
+    <link rel="stylesheet" href="assets/css/header/header-nav/header-list-link.css">
+    <link rel="stylesheet" href="assets/css/header/header-nav/header-list-span.css">
+    <link rel="stylesheet" href="assets/css/header/header-nav/header-list-icon.css">
+    <link rel="stylesheet" href="assets/css/header/header-nav/header-list-name.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/main-container-content.css">
+    
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/container-formatting-tags.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/formatting-tags-content.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-symbol-codes/container-symbol-codes.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-emoticon/container-emoticon.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-favicon/container-favicon.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/container-useful-tags.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-palette/container-palette.css">
+    <link rel="stylesheet" href="assets/css/footer/footer.css">
+    <link rel="stylesheet" href="assets/css/footer/footer-link.css">
 </head>
 <body>
-    <header>
-        <h1>Conteúdo de HTML</h1>     
+    <header id="toggleMenu" class="header">
+        <nav class="header__nav">
+            <span id="btnToggleMenu" class="header__menu--button"><ion-icon id="changeIcon" class="menu--button__icon" name="menu-outline"></ion-icon></span>
+            <ul class="header__list">
+                <li class="header__list--item active" id="emoticon">
+                    <a class="header__list--link" href="#">
+                        <span class="header__list--span"><ion-icon class="header__list--icon" name="happy-outline"></ion-icon></span>
+                        <span class="header__list--name">free emoticon</span>
+                    </a>
+                </li>
+                <li class="header__list--item" id=""><a class="header__list--link" href="#">
+                        <span class="header__list--span"><ion-icon class="header__list--icon" name="rocket-outline"></ion-icon></span>
+                        <span class="header__list--name">free favicon</span>
+                    </a>
+                </li>
+                <li class="header__list--item">
+                    <a class="header__list--link" href="#">
+                        <span class="header__list--span"><ion-icon class="header__list--icon" name="color-palette-outline"></ion-icon></span>
+                        <span class="header__list--name">free color palette</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div id="caixa-formatacao">
-            <section>
-                <strong class="destaque">Tags de formatação:</strong>
-                    <article id="tags-formatacao">
-                        <!--Tags <hr> e <br> não são recomendadas por não serem semânticas.
-                        hr cria uma linha horizontal na página e br uma quebra de linha.
-                        É possível fazer as duas coisas por css-->
-                        <p>texto sobrescrito: x<sup>2</sup></p>
-                        <p>texto subscrito H<sub>2</sub>O</p>
-                        <!--Dá pra fazer com css-->
-                        <p><mark>texto marcado</mark></p>
-                        <!--Tag strong = conteúdo importante, semântico-->
-                        <p><strong>parágrafo com negrito</strong></p>
-                        <!--Não é semântico, não recomendado-->
-                        <p><em>parágrafo com itálico</em></p>
-                        <!--Não semântico, dá pra fazer com css-->
-                        <p>Texto deletado: De <del>R$29,99</del> por R$19,99</p>
-                        <!--Não semântico-->
-                        <p><ins>parágrafo com inserido</ins></p>
-                        <!--Não semântico-->
-                        <p><small>parágrafo com small</small></p>
-                    </article>
-            </section>
-        </div>     
-        <div id="caixa-pai">
-            <div id="caixa-simbolos">
-                <section>
-                    <strong class="destaque">Códigos de símbolos:</strong>
-                    <article id="tags-simbolos">
-                        <p>Simbolo de marca registrada: &reg;</p>
-                        <p>Símbolo de copyright: &copy;</p>
-                        <p>Símbolo de marca registrada em inglês: &trade;</p>
-                        <p>Símbolo de euro: &euro;</p>
-                        <p>Símbolo de libra: &pound;</p>
-                        <p>Sómbolo de moeda chinesa: &yen;</p>
-                        <p>Símbolo da moeda americana: &cent;</p>
-                        <p>Símbolo delta: &Delta;</p>
-                        <p>Seta apontando pra cima: &uparrow;</p>
-                        <p>Seta apontando pra baixo: &downarrow;</p>
-                        <p>Seta apontando pra direita: &rightarrow;</p>
-                        <p>Seta apontando pra esquerda: &leftarrow;</p>
-                    </article>
+    <main class="main--container">
+        <section class="main--container__content">
+            <section class="container--formatting--tags">
+                <section class="formatting--tags__content">
+                    <h2 class="formatting--tags__title">formatting tags</h2>
+                    <!--Usage of both tags <hr> and <br> aren't recommended because they're not semantic.
+                    hr creates a horizontal line and br breakes the line.
+                    It's possible to achieve the same result only using css-->
+                    <p>superscript text: x<sup>2</sup></p>
+                    <p>subscript text: H<sub>2</sub>O</p>
+                    <!--it can be done with css-->
+                    <p><mark>marked text</mark></p>
+                    <!--Tag strong = important content, it's semantic-->
+                    <p><strong>paragraph with bold</strong></p>
+                    <!--it's not semantic <em>, not recommended-->
+                    <p><em>paragraph with italics</em></p>
+                    <!--it's not semantic, it's possible to achieve this with css too-->
+                    <p>deleted text: from <del>R$29,99</del> for only R$19,99</p>
+                    <!--not semantic-->
+                    <p><ins>paragraph with inserted</ins></p>
+                    <!--not semantic-->
+                    <p><small>paragraph with small</small></p>
                 </section>
-            </div>
-            <div id="caixa-emojis-favicon">
-                <section>
-                    <strong class="destaque">Sites para emoji:</strong>
-                    <article class="link-emoji-favicon">
-                        <p><a href="https://emojipedia.org/" target="_blank" rel="external" title="ir para site" class="links">emojipedia</a></p>
-                    </article>
-                    <strong class="destaque">Sites para favicon:</strong>
-                    <article class="link-emoji-favicon">
-                        <ul>
-                            <li><a href="https://iconarchive.com/" target="_blank" rel="external" title="ir para site" class="links">Icon Archive</a>
-                            <li><a href="https://www.favicon.cc/" target="_blank" rel="external" title="ir para site" class="links">Favicon cc</a>
-                            <li><a href="https://favicon.io/" target="_blank" rel="external" title="ir para site" class="links">Favicon.io</a>
-                        </ul>
-                    </article>
+                <section class="container--symbol--codes">
+                    <h2 class="symbol--codes__title">symbol codes:</h2>
+                    <p>trademark: &reg;</p>
+                    <p>copyright: &copy;</p>
+                    <p>english trademark: &trade;</p>
+                    <p>euro: &euro;</p>
+                    <p>libra: &pound;</p>
+                    <p>chinese coin: &yen;</p>
+                    <p>american coin: &cent;</p>
+                    <p>delta: &Delta;</p>
+                    <p>up arrow: &uparrow;</p>
+                    <p>down arrow: &downarrow;</p>
+                    <p>right arrow: &rightarrow;</p>
+                    <p>left arrow: &leftarrow;</p>
                 </section>
-            </div>
-        </div>
-        <div id="caixa-tags-palhetas">
-            <section>
-                <strong class="destaque">Tags úteis</strong>              
-                    <article id="tags-uteis">
-                        <code>Tag &lt;code&gt; e &lt;pre&gt;<pre>
-                            name = input('Qual o seu nome? ')
-                            print(f'Olá, {name}!')  </pre></code>
-                        <p>tag &lt;q&gt; pra citação: <q>Ao redor do buraco tudo é beira</q>.</p>
-                        <p>Tag &lt;abbr&gt; com parâmetro title:<abbr title="Cascading Style Sheet">CSS</abbr></p>
-                    </article>
-                <strong class="destaque">Sites para palhetas:</strong>
-                    <article id="site-palhetas">
-                        <ul>
-                            <li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external" title="ir para site" class="links">Color.Adobe.com</a></li>
-                            <li><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="external" title="ir para site" class="links">Paletton</a></li>
-                            <li><a href="https://coolors.co/" target="_blank" rel="external" title="ir para site" class="links">Coolors</a></li>
-                            <li><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-br" target="_blank" rel="external" title="ir para site" class="links">Extensão do Google Colorzilla</a></li>
-                        </ul>
-                    </article>
             </section>
-        </div>   
+            <section class="container--emoticon">
+                <h2 class="emoticon__title">emoticon:</h2>
+                <a class="emoticon__link" href="https://emojipedia.org/" target="_blank" rel="external" title="go to website">emojipedia</a>
+            </section>
+            <section class="container--favicon">
+                <h2 class="favicon__title">favicon:</h2>
+                <ul class="favicon__list">
+                    <li class="favicon__list--item"><a class="favicon__list--link" href="https://iconarchive.com/" target="_blank" rel="external" title="go to website">Icon Archive</a>
+                    <li class="favicon__list--item"><a class="favicon__list--link" href="https://www.favicon.cc/" target="_blank" rel="external" title="go to website">Favicon cc</a>
+                    <li class="favicon__list--item"><a class="favicon__list--link" href="https://favicon.io/" target="_blank" rel="external" title="go to website">Favicon.io</a>
+                </ul>
+            </section>
+            <section class="container--useful--tags">
+                <h2 class="useful--tags__title">useful tags:</h2>
+                <code>
+                    tags &lt;code&gt; and &lt;pre&gt;
+                    <pre>
+                        name = input('What's your name? ')
+                        print(f'Hello, {name}!')
+                    </pre>
+                </code>
+                <p>tag &lt;q&gt; for quote: <q>Many of life's failures are people who did not realize how close they were to success when they gave up</q> -Thomas A. Edison</p>
+                <p>Tag &lt;abbr&gt; with "title" as parameter parameter:<abbr title="Cascading Style Sheet">CSS</abbr></p>
+            </section>    
+            <section class="container--palette">
+                <h2 class="palette__title">palette:</h2>
+                <ul>
+                    <li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external" title="go to website">Color.Adobe.com</a></li>
+                    <li><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="external" title="go to website">Paletton</a></li>
+                    <li><a href="https://coolors.co/" target="_blank" rel="external" title="go to website">Coolors</a></li>
+                    <li><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-br" target="_blank" rel="external" title="go to website" class="links">Colorzilla extension</a></li>
+                </ul>
+            </section>
+        </section>
     </main>
-    <footer id="rodape">
-        <p id="texto-rodape"><a href="https://www.linkedin.com/in/daniel-moraes-835b6b241/" target="_blank" rel="external" title="ir para Linkedin">&copy; Daniel Moraes - ADS Full Stack</a></p>
+    <footer class="footer">
+        <a class="footer__link" href="https://www.linkedin.com/in/daniel-moraes-835b6b241/" target="_blank" rel="external" title="acess author's Linkedin">&copy; Daniel Moraes - ADS Full Stack</a>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

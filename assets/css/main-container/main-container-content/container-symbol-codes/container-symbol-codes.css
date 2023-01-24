@@ -1,0 +1,5 @@
+.container--symbol--codes{
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    text-align: center;
+}

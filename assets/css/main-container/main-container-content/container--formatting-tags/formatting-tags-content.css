@@ -1,0 +1,6 @@
+.formatting--tags__content{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    text-align: center;
+    border-right: 5px solid var(--lightpurple);
+}
