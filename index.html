@@ -41,21 +41,33 @@
         <nav class="header__nav">
             <span id="btnToggleMenu" class="header__menu--button"><ion-icon id="changeIcon" class="menu--button__icon" name="menu-outline"></ion-icon></span>
             <ul class="header__list">
-                <li class="header__list--item active" id="emoticon">
-                    <a class="header__list--link" href="#">
+                <li class="header__list--item active">
+                    <a data-link="tags" class="header__list--link" href="#">
+                        <span class="header__list--span"><ion-icon class="header__list--icon" name="bookmark-outline"></ion-icon></span>
+                        <span class="header__list--name">formatting tags</pan>
+                    </a>
+                </li>
+                <li class="header__list--item">
+                    <a data-link="emoticon" class="header__list--link" href="#">
                         <span class="header__list--span"><ion-icon class="header__list--icon" name="happy-outline"></ion-icon></span>
                         <span class="header__list--name">free emoticon</span>
                     </a>
                 </li>
-                <li class="header__list--item" id=""><a class="header__list--link" href="#">
+                <li class="header__list--item" id=""><a data-link="favicon" class="header__list--link" href="#">
                         <span class="header__list--span"><ion-icon class="header__list--icon" name="rocket-outline"></ion-icon></span>
                         <span class="header__list--name">free favicon</span>
                     </a>
                 </li>
                 <li class="header__list--item">
-                    <a class="header__list--link" href="#">
+                    <a data-link="palette" class="header__list--link" href="#">
                         <span class="header__list--span"><ion-icon class="header__list--icon" name="color-palette-outline"></ion-icon></span>
                         <span class="header__list--name">free color palette</span>
+                    </a>
+                </li>
+                <li class="header__list--item">
+                    <a data-link="useful" class="header__list--link" href="#">
+                        <span class="header__list--span"><ion-icon class="header__list--icon" name="pricetags-outline"></ion-icon></span>
+                        <span class="header__list--name">useful tags</span>
                     </a>
                 </li>
             </ul>
@@ -63,8 +75,8 @@
     </header>
     <main class="main--container">
         <section class="main--container__content">
-            <section class="container--formatting--tags">
-                <section class="formatting--tags__content">
+            <section data-container="tags-container" class="container--formatting--tags active">
+                <section  class="formatting--tags__content">
                     <h2 class="formatting--tags__title">formatting tags</h2>
                     <!--Usage of both tags <hr> and <br> aren't recommended because they're not semantic.
                     hr creates a horizontal line and br breakes the line.
@@ -100,11 +112,11 @@
                     <p>left arrow: &leftarrow;</p>
                 </section>
             </section>
-            <section class="container--emoticon">
+            <section data-container="emoticon-container" class="container--emoticon">
                 <h2 class="emoticon__title">emoticon:</h2>
                 <a class="emoticon__link" href="https://emojipedia.org/" target="_blank" rel="external" title="go to website">emojipedia</a>
             </section>
-            <section class="container--favicon">
+            <section data-container="favicon-container" class="container--favicon">
                 <h2 class="favicon__title">favicon:</h2>
                 <ul class="favicon__list">
                     <li class="favicon__list--item"><a class="favicon__list--link" href="https://iconarchive.com/" target="_blank" rel="external" title="go to website">Icon Archive</a>
@@ -112,7 +124,7 @@
                     <li class="favicon__list--item"><a class="favicon__list--link" href="https://favicon.io/" target="_blank" rel="external" title="go to website">Favicon.io</a>
                 </ul>
             </section>
-            <section class="container--useful--tags">
+            <section data-container="useful-container" class="container--useful--tags">
                 <h2 class="useful--tags__title">useful tags:</h2>
                 <code>
                     tags &lt;code&gt; and &lt;pre&gt;
@@ -124,7 +136,7 @@
                 <p>tag &lt;q&gt; for quote: <q>Many of life's failures are people who did not realize how close they were to success when they gave up</q> -Thomas A. Edison</p>
                 <p>Tag &lt;abbr&gt; with "title" as parameter parameter:<abbr title="Cascading Style Sheet">CSS</abbr></p>
             </section>    
-            <section class="container--palette">
+            <section data-container="palette-container" class="container--palette">
                 <h2 class="palette__title">palette:</h2>
                 <ul>
                     <li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external" title="go to website">Color.Adobe.com</a></li>
