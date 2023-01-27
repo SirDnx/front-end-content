@@ -1,0 +1,10 @@
+.description--span{
+    display: block;
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--profile-color-darker);
+}
+
+body.active .description--span{
+    color: var(--profile-color-darker-lightmode);
+}

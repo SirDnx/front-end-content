@@ -1,0 +1,28 @@
+.card{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    width: 300px;
+    height: 120px;
+    background-color: var(--bg-container);
+    box-shadow: 0 50px 50px var(--bg-container);
+    padding: 20px;
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+}
+
+.card.active{
+    height: 400px;
+}
+
+.card.active .toggle--profile .toggle--profile__icon{
+    transform: rotate(180deg);
+}
+
+body.active .card{
+    background-color: var(--bg-container-lightmode);
+    box-shadow: 0 50px 50px var(--bg-container-lightmode);
+    border: var(--border-lightmode);
+}
+
+

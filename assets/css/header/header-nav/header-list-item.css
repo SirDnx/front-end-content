@@ -3,11 +3,12 @@
     position: relative;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border-left: 5px solid var(--darkerpurple);
+    border-left: 5px solid var(--bg-container);
+
 }
 
 .header__list--item.active{
-    background-color: var(--lightpurple);
+    background-color: var(--bg-body);
 }
 
 .header__list--item.active a::before{
@@ -18,8 +19,8 @@
     top: -30px;
     right: 0;
     border-radius: 50%;
-    box-shadow: 15px 15px 0 var(--lightpurple);
-    background-color: var(--darkerpurple);
+    box-shadow: 15px 15px 0 var(--bg-body);
+    background-color: var(--bg-container);
     z-index: -1;
 }
 
@@ -31,7 +32,26 @@
     bottom: -30px;
     border-radius: 50%;
     right: 0;
-    box-shadow: 15px -15px 0 var(--lightpurple);
-    background-color: var(--darkerpurple);
+    box-shadow: 15px -15px 0 var(--bg-body);
+    background-color: var(--bg-container);
     z-index: -1;
+}
+
+body.active .header__list--item{
+    border-left: 5px solid var(--bg-container-lightmode);
+}
+
+body.active .header__list--item.active{
+    background-color: var(--bg-body-lightmode);
+}
+
+body.active .header__list--item.active a::before{
+    box-shadow: 15px 15px 0 var(--bg-body-lightmode);
+    background-color: var(--bg-container-lightmode);
+}
+
+body.active .header__list--item.active a::after{
+    box-shadow: 15px -15px 0 var(--bg-body-lightmode);
+    background-color: var(--bg-container-lightmode);
+
 }

@@ -1,0 +1,8 @@
+.card__list__icon{
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+
+body.active .card__list__icon{
+    color: var(--text-lightmode);
+}

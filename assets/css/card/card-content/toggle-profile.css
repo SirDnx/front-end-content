@@ -1,0 +1,28 @@
+.toggle--profile{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,255,255,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.toggle--profile__icon{
+    color: var(--bg-body);
+    font-size: 1.4rem;
+    transition: .5s ease-in-out;
+}
+
+body.active .toggle--profile{
+    background-color: var(--color-lightmode);
+}
+
+body.active .toggle--profile__icon{
+    color: var(--bg-body-lightmode);
+}
+

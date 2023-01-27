@@ -1,0 +1,41 @@
+.checkbox--btn{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--bg-container);
+}
+
+
+.checkbox--btn input:checked + .btn__div .div__slide{
+    transform: translateX(60px);
+}
+
+.checkbox--btn .div__slide::before{
+    content: 'ON';
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    left: -60px;
+    top: 0;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: green;
+    font-weight: bold;
+}
+
+.checkbox--btn .div__slide::after{
+    content: 'OFF';
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: red;
+    font-weight: bold;
+}

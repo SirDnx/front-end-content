@@ -6,6 +6,11 @@ const listItems = document.querySelectorAll('.header__list--item');
 const buttonsMenu = document.querySelectorAll('[data-link]');
 const containers = document.querySelectorAll('[data-container]');
 
+const btnToggleDarkMode = document.querySelector('#btnToggleDarkMode');
+const bodyElement = document.querySelector('body');
+
+const btnProfile = document.querySelector('#btnProfile');
+const cardProfile = document.querySelector('#cardProfile');
 
 btnToggleMenu.addEventListener("click", () => {
     toggleMenu.classList.toggle('active');
@@ -43,3 +48,15 @@ buttonsMenu.forEach( button => {
 function showContainer(buttonTarget){
     document.querySelector('[data-container="' + buttonTarget + '-container"]').classList.add('active');
 }
+
+//apply dark/light mode
+
+btnToggleDarkMode.addEventListener("click", () => {
+    bodyElement.classList.toggle('active');
+});
+
+//profile expansive engine
+
+btnProfile.addEventListener("click", () => {
+    cardProfile.classList.toggle('active');
+});

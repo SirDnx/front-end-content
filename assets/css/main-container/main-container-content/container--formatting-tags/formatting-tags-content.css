@@ -2,5 +2,9 @@
     grid-column: 1 / 1;
     grid-row: 1 / 1;
     text-align: center;
-    border-right: 5px solid var(--lightpurple);
+    border-right: 5px solid var(--bg-body);
+}
+
+body.active .formatting--tags__content{
+    border-right: 5px solid var(--bg-body-lightmode);
 }

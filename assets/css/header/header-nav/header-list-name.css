@@ -9,3 +9,8 @@
     font-size: 1.2rem;
 }
 
+
+
+body.active .header__list--name{
+    color: var(--text-lightmode);
+}

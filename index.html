@@ -25,16 +25,35 @@
     <link rel="stylesheet" href="assets/css/header/header-nav/header-list-name.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/main-container-content.css">
-    
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/container-formatting-tags.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/formatting-tags-content.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/formatting-tags-title.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-symbol-codes/container-symbol-codes.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-symbol-codes/symbol-codes-title.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-emoticon/container-emoticon.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-emoticon/emoticon-title.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-favicon/container-favicon.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-favicon/favicon-title.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/container-useful-tags.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/useful-tags-title.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-palette/container-palette.css">
-    <link rel="stylesheet" href="assets/css/footer/footer.css">
-    <link rel="stylesheet" href="assets/css/footer/footer-link.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-palette/palette-title.css">
+    <link rel="stylesheet" href="assets/css/card/card.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/card-content.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/card-img.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/img-profile.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/card-description.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/description-span.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/card-list.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/list-item.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/card-list-link.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/card-list-icon.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/toggle-profile.css">
+    <link rel="stylesheet" href="assets/css/card/card-content/card-animated-border/animated-border.css">
+    <link rel="stylesheet" href="assets/css/checkbox-btn/checkbox-btn.css">
+    <link rel="stylesheet" href="assets/css/checkbox-btn/btn-input.css">
+    <link rel="stylesheet" href="assets/css/checkbox-btn/btn-div.css">
+    <link rel="stylesheet" href="assets/css/checkbox-btn/div-slide.css">
 </head>
 <body>
     <header id="toggleMenu" class="header">
@@ -84,7 +103,7 @@
                     <p>superscript text: x<sup>2</sup></p>
                     <p>subscript text: H<sub>2</sub>O</p>
                     <!--it can be done with css-->
-                    <p><mark>marked text</mark></p>
+                    <p><mark style="background:blue;">marked text</mark></p>
                     <!--Tag strong = important content, it's semantic-->
                     <p><strong>paragraph with bold</strong></p>
                     <!--it's not semantic <em>, not recommended-->
@@ -124,7 +143,7 @@
                     <li class="favicon__list--item"><a class="favicon__list--link" href="https://favicon.io/" target="_blank" rel="external" title="go to website">Favicon.io</a>
                 </ul>
             </section>
-            <section data-container="useful-container" class="container--useful--tags">
+            <section data-container="useful-container" class="container--useful--tags lightmode">
                 <h2 class="useful--tags__title">useful tags:</h2>
                 <code>
                     tags &lt;code&gt; and &lt;pre&gt;
@@ -134,7 +153,7 @@
                     </pre>
                 </code>
                 <p>tag &lt;q&gt; for quote: <q>Many of life's failures are people who did not realize how close they were to success when they gave up</q> -Thomas A. Edison</p>
-                <p>Tag &lt;abbr&gt; with "title" as parameter parameter:<abbr title="Cascading Style Sheet">CSS</abbr></p>
+                <p>Tag &lt;abbr&gt; with "title" as parameter:<abbr title="Cascading Style Sheet">CSS</abbr></p>
             </section>    
             <section data-container="palette-container" class="container--palette">
                 <h2 class="palette__title">palette:</h2>
@@ -147,9 +166,53 @@
             </section>
         </section>
     </main>
-    <footer class="footer">
-        <a class="footer__link" href="https://www.linkedin.com/in/daniel-moraes-835b6b241/" target="_blank" rel="external" title="acess author's Linkedin">&copy; Daniel Moraes - ADS Full Stack</a>
-    </footer>
+    <section id="cardProfile" class="card">
+        <div class="card__content">
+            <div class="card__img">
+                <img class="img--profile" src="assets/img/user.jpg" alt="author's picture">
+            </div>
+            <h2 class="card__description">daniel moraes <span class="description--span">front-end developer</span></h2>
+        </div>    
+        <ul class="card__list">
+            <li class="card__list__item">
+                <a class="card__list__link" href="https://github.com/SirDnx" target="_blank" rel="external" title="follow me on github">
+                    <ion-icon class="card__list__icon" name="logo-github"></ion-icon>
+                    my github
+                </a>
+            </li>
+            <li class="list__item">
+                <a class="card__list__link" href="https://www.instagram.com/daniel_d_n_x_/" target="_blank" rel="external" title="follow me on instagram">
+                    <ion-icon class="card__list__icon" name="logo-instagram"></ion-icon>
+                    my instagram
+                </a>
+            </li>
+            <li class="list__item">
+                <a class="card__list__link" href="https://www.linkedin.com/in/danielmoraesdev/" target="_blank" rel="external" title="text me on linkedin">
+                    <ion-icon class="card__list__icon" name="logo-linkedin"></ion-icon>
+                    linkedin
+                </a>
+            </li>
+            <li class="list__item">
+                <a class="card__list__link" href="mailto:daniel.sp.ma@gmail.com" title="mail me for proposals">
+                    <ion-icon class="card__list__icon" name="mail-outline"></ion-icon>
+                    mail me
+                </a>
+            </li>
+        </ul>
+        <div id="btnProfile" class="toggle--profile">
+            <ion-icon class="toggle--profile__icon" name="caret-down-outline"></ion-icon>
+        </div>
+        <span class="first--span--border"></span>
+        <span class="second--span--border"></span>
+        <span class="third--span--border"></span>
+        <span class="fourth--span--border"></span>
+    </section>
+    <div class="checkbox--btn">
+        <input class="btn__input" id="btnToggleDarkMode" type="checkbox" name="btn-toggle">
+        <div class="btn__div">
+            <span class="div__slide"></span>
+        </div>
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/main.js"></script>

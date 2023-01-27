@@ -1,3 +1,7 @@
 .header__list--icon{
     font-size: 2rem;
 }
+
+body.active .header__list--icon{
+    color: var(--text-lightmode);
+}

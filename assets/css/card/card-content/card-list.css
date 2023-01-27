@@ -1,0 +1,10 @@
+.card__list{
+    position: relative;
+    top: 25px;
+    border-top: 1px solid var(--color);
+    padding: 1.4rem;
+}
+
+body.active .card__list{
+    border-top: 1px solid var(--color-lightmode);
+}

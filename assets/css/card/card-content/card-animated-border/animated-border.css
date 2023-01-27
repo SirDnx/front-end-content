@@ -1,0 +1,81 @@
+.first--span--border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--color));
+    animation: animate-one 5s linear infinite;
+}
+
+@keyframes animate-one{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.second--span--border{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--color));
+    animation: animate-two 5s linear infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes animate-two{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.third--span--border{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, var(--color));
+    animation: animate-three 5s linear infinite;
+}
+
+@keyframes animate-three{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.fourth--span--border{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--color));
+    animation: animate-four 5s linear infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes animate-four{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+body.active .first--span--border,body.active .second--span--border, body.active .third--span--border, body.active .fourth--span--border{
+    background: linear-gradient(to top, transparent, var(--color-lightmode));
+}
