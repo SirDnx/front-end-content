@@ -60,3 +60,9 @@ btnToggleDarkMode.addEventListener("click", () => {
 btnProfile.addEventListener("click", () => {
     cardProfile.classList.toggle('active');
 });
+
+const trademark = document.querySelector('.trademark');
+
+trademark.addEventListener("click", () => {
+    document.querySelector('.code').style.display = 'block';
+})

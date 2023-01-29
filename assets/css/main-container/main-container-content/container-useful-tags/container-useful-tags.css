@@ -1,19 +1,7 @@
 .container--useful--tags{
-    width: 100%;
-    max-width: 900px;
-    min-height: 90vh;
-    background-color: var(--bg-container);
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: 0 25px 50px rgba(0,0,0,.1);
-    display: none;
+    grid-template-columns: 60% 40%;
 }
 
 .container--useful--tags.active{
-    display: block;
-}
-
-body.active .container--useful--tags{
-    background-color: var(--bg-container-lightmode);
-    border: var(--color-lightmode);
+    display: grid;
 }

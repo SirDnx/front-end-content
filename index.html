@@ -27,17 +27,15 @@
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/main-container-content.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/container-formatting-tags.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/formatting-tags-content.css">
-    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/formatting-tags-title.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/paragraphs/paragraphs.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-symbol-codes/container-symbol-codes.css">
-    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-symbol-codes/symbol-codes-title.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-symbol-codes/paragraphs/paragraphs.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-emoticon/container-emoticon.css">
-    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-emoticon/emoticon-title.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-favicon/container-favicon.css">
-    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-favicon/favicon-title.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/container-useful-tags.css">
-    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/useful-tags-title.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/main-tags/main-tags.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/other-tags/other-tags.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-palette/container-palette.css">
-    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-palette/palette-title.css">
     <link rel="stylesheet" href="assets/css/card/card.css">
     <link rel="stylesheet" href="assets/css/card/card-content/card-content.css">
     <link rel="stylesheet" href="assets/css/card/card-content/card-img.css">
@@ -54,6 +52,10 @@
     <link rel="stylesheet" href="assets/css/checkbox-btn/btn-input.css">
     <link rel="stylesheet" href="assets/css/checkbox-btn/btn-div.css">
     <link rel="stylesheet" href="assets/css/checkbox-btn/div-slide.css">
+    <link rel="stylesheet" href="assets/css/main-container/shared-styles/title-underline.css">
+    <link rel="stylesheet" href="assets/css/main-container/shared-styles/container.css">
+    <link rel="stylesheet" href="assets/css/main-container/shared-styles/paragraphs-color.css">
+    <link rel="stylesheet" href="assets/css/main-container/shared-styles/container-content.css">
 </head>
 <body>
     <header id="toggleMenu" class="header">
@@ -94,69 +96,101 @@
     </header>
     <main class="main--container">
         <section class="main--container__content">
-            <section data-container="tags-container" class="container--formatting--tags active">
-                <section  class="formatting--tags__content">
-                    <h2 class="formatting--tags__title">formatting tags</h2>
-                    <!--Usage of both tags <hr> and <br> aren't recommended because they're not semantic.
-                    hr creates a horizontal line and br breakes the line.
-                    It's possible to achieve the same result only using css-->
-                    <p>superscript text: x<sup>2</sup></p>
-                    <p>subscript text: H<sub>2</sub>O</p>
-                    <!--it can be done with css-->
-                    <p><mark style="background:blue;">marked text</mark></p>
-                    <!--Tag strong = important content, it's semantic-->
-                    <p><strong>paragraph with bold</strong></p>
-                    <!--it's not semantic <em>, not recommended-->
-                    <p><em>paragraph with italics</em></p>
-                    <!--it's not semantic, it's possible to achieve this with css too-->
-                    <p>deleted text: from <del>R$29,99</del> for only R$19,99</p>
-                    <!--not semantic-->
-                    <p><ins>paragraph with inserted</ins></p>
-                    <!--not semantic-->
-                    <p><small>paragraph with small</small></p>
+            <section data-container="tags-container" class="container--formatting--tags container active">
+                <section  class="formatting--tags__content container-content">
+                    <h2 class="formatting--tags__title title">formatting tags</h2>
+                    <p class="formatting--paragraph superscript">superscript text: x<sup>2</sup></p>
+                    <p class="formatting--paragraph subscript">subscript text: H<sub>2</sub>O</p>
+                    <p class="formatting--paragraph marked"><mark style="background:blue;">marked text</mark></p>
+                    <p class="formatting--paragraph bold"><strong>paragraph with bold</strong></p>
+                    <p class="formatting--paragraph italics"><em>paragraph with italics</em></p>
+                    <p class="formatting--paragraph deleted">deleted text: from <del>R$29,99</del> for only R$19,99</p>
+                    <p class="formatting--paragraph inserted"><ins>paragraph with inserted</ins></p>
+                    <p class="formatting--paragraph small"><small>paragraph with small</small></p>
+                    <p class="formatting--paragraph big"><big>bigger text</big></p>
                 </section>
-                <section class="container--symbol--codes">
-                    <h2 class="symbol--codes__title">symbol codes:</h2>
-                    <p>trademark: &reg;</p>
-                    <p>copyright: &copy;</p>
-                    <p>english trademark: &trade;</p>
-                    <p>euro: &euro;</p>
-                    <p>libra: &pound;</p>
-                    <p>chinese coin: &yen;</p>
-                    <p>american coin: &cent;</p>
-                    <p>delta: &Delta;</p>
-                    <p>up arrow: &uparrow;</p>
-                    <p>down arrow: &downarrow;</p>
-                    <p>right arrow: &rightarrow;</p>
-                    <p>left arrow: &leftarrow;</p>
+                <section class="container--symbol--codes container-content">
+                    <h2 class="symbol--codes__title title">symbol codes:</h2>
+                    <p class="paragraph trademark">trademark: &reg;</p>
+                    <p class="paragraph copyright">copyright: &copy;</p>
+                    <p class="paragraph englishtrademark">english trademark: &trade;</p>
+                    <p class="paragraph euro">euro: &euro;</p>
+                    <p class="paragraph pound">pound: &pound;</p>
+                    <p class="paragraph yen">yen: &yen;</p>
+                    <p class="paragraph cent">american cent: &cent;</p>
+                    <p class="paragraph delta">delta: &Delta;</p>
+                    <p class="paragraph uparrow">up arrow: &uparrow;</p>
+                    <p class="paragraph downarrow">down arrow: &downarrow;</p>
+                    <p class="paragraph rightarrow">right arrow: &rightarrow;</p>
+                    <p class="paragraph leftarrow">left arrow: &leftarrow;</p>
+                    <p class="paragraph invertedexclamation">inverted exclamation: &iexcl;</p>
+                    <p class="paragraph invertedquestion">inverted question mark: &iquest;</p>
+                    <p class="paragraph brokenbar">broken vertical bar: &brvbar;</p>
+                    <p class="paragraph sectionsign">section sign: &sect;</p>
+                    <p class="paragraph feminineordinal">feminine ordinal: &ordf;</p>
+                    <p class="paragraph masculineordinal">masculine ordinal: &ordm;</p>
+                    <p class="paragraph doubleleftarrow">double left arrow: &laquo;</p>
+                    <p class="paragraph doublerightarrow">double right arrow: &raquo;</p> 
+                    <p class="paragraph degreesign">degree sign: &deg;</p>
+                    <p class="paragraph plusorminus">plus-or-minus: &plusmn;</p>
+                    <p class="paragraph divisionsign">division sign: &divide;</p>
+                    <p class="paragraph multiplicationsign">multiplication sign: &times;</p>
+                    <p class="paragraph twosquared">two-squared: &sup2;</p>
+                    <p class="paragraph threecubed">three-cubed: &sup3;</p>
+                    <p class="paragraph microsign">micro sign: &micro;</p>
+                    <p class="paragraph pilcrowsign">pilcrow sign - paragraph sign: &para;</p>
+                    <p class="paragraph onequarter">fraction one quarter: &frac14;</p>
+                    <p class="paragraph onehalf">fraction one half: &frac12;</p>
+                    <p class="paragraph threequarters">fraction three quarters: &frac34;</p>
                 </section>
             </section>
-            <section data-container="emoticon-container" class="container--emoticon">
-                <h2 class="emoticon__title">emoticon:</h2>
+            <section data-container="emoticon-container" class="container--emoticon container container-content">
+                <h2 class="emoticon__title title">emoticon:</h2>
                 <a class="emoticon__link" href="https://emojipedia.org/" target="_blank" rel="external" title="go to website">emojipedia</a>
             </section>
-            <section data-container="favicon-container" class="container--favicon">
-                <h2 class="favicon__title">favicon:</h2>
+            <section data-container="favicon-container" class="container--favicon container container-content">
+                <h2 class="favicon__title title">favicon:</h2>
                 <ul class="favicon__list">
                     <li class="favicon__list--item"><a class="favicon__list--link" href="https://iconarchive.com/" target="_blank" rel="external" title="go to website">Icon Archive</a>
                     <li class="favicon__list--item"><a class="favicon__list--link" href="https://www.favicon.cc/" target="_blank" rel="external" title="go to website">Favicon cc</a>
                     <li class="favicon__list--item"><a class="favicon__list--link" href="https://favicon.io/" target="_blank" rel="external" title="go to website">Favicon.io</a>
                 </ul>
             </section>
-            <section data-container="useful-container" class="container--useful--tags lightmode">
-                <h2 class="useful--tags__title">useful tags:</h2>
-                <code>
-                    tags &lt;code&gt; and &lt;pre&gt;
-                    <pre>
-                        name = input('What's your name? ')
-                        print(f'Hello, {name}!')
-                    </pre>
-                </code>
-                <p>tag &lt;q&gt; for quote: <q>Many of life's failures are people who did not realize how close they were to success when they gave up</q> -Thomas A. Edison</p>
-                <p>Tag &lt;abbr&gt; with "title" as parameter:<abbr title="Cascading Style Sheet">CSS</abbr></p>
+            <section data-container="useful-container" class="container--useful--tags lightmode container">
+                <section class="main--tags container-content">
+                    <h2 class="useful--tags__title title">useful tags:</h2>
+                    <p>
+                        <code>
+                            <pre>
+                                name = input('What's your name? ')
+                                print(f'Hello, {name}!')
+                            </pre>
+                        </code>
+                    </p>
+                    <p><q>Many of life's failures are people who did not realize how close they were to success when they gave up</q></p>
+                    <p><abbr title="Cascading Style Sheet">CSS</abbr></p>
+                    <p><cite>Star Trek</cite></p>
+                    <p><bdo dir="rtl">inverted text</bdo></p>
+                    <p><address>Saint Germain Street</address></p>
+                </section>
+                <section class="other--tags container-content">
+                    <h2 class="title">common tags</h2>
+                    <p>&lt;video&gt;&lt;/video&gt;</p>
+                    <p>&lt;audio&gt;&lt;/audio&gt;</p>
+                    <p>&lt;meta&gt;</p>
+                    <p>&lt;iframe&gt;</p>
+                    <p>&lt;select&gt; and &lt;option&gt;</p>
+                    <p>&lt;form&gt;&lt;/form&gt;</p>
+                    <p>&lt;legend&gt;&lt;/legend&gt;</p>
+                    <p>&lt;fieldset&gt;&lt;/fieldset&gt;</p>
+                    <p>&lt;svg&gt;&lt;/svg&gt;</p>
+                    <p>&lt;figure&gt;&lt;/figure&gt;</p>
+                    <p>&lt;figcaption&gt;&lt;/figcaption&gt;</p>
+                    <p>&lt;track&gt;&lt;/track&gt;</p>
+                </section>
             </section>    
-            <section data-container="palette-container" class="container--palette">
-                <h2 class="palette__title">palette:</h2>
+            <section data-container="palette-container" class="container--palette container container-content">
+                <h2 class="palette__title title">palette:</h2>
                 <ul>
                     <li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external" title="go to website">Color.Adobe.com</a></li>
                     <li><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="external" title="go to website">Paletton</a></li>

@@ -1,0 +1,46 @@
+.superscript:hover::after{
+    content: '<sup>superscript</sup>';
+}
+
+.subscript:hover::after{
+    content: '<sub>subscript<sub>';
+}
+
+.marked:hover::after{
+    content: '<mark>marked</mark>';
+}
+
+.bold:hover::after{
+    content: '<strong>bold</strong>';
+}
+
+.italics:hover::after{
+    content: '<em>italic</em>';
+}
+
+.deleted:hover::after{
+    content: '<del>deleted</del>';
+}
+
+.inserted:hover::after{
+    content: '<ins>inserted</ins>';
+}
+
+.small:hover::after{
+    content: '<small>small</small>'
+}
+
+.big:hover::after{
+    content: '<big>big</big>';
+}
+
+.formatting--paragraph:hover::after{
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 10px 10px 10px 0px;
+    color: var(--black);
+    top: -25px;
+    right: -150px;
+    padding: .3rem;
+}
+

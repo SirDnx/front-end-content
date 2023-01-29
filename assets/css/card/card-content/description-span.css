@@ -3,6 +3,7 @@
     font-size: .8rem;
     font-weight: 400;
     color: var(--profile-color-darker);
+    letter-spacing: 3px;
 }
 
 body.active .description--span{

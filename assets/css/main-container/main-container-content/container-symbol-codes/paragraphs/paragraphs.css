@@ -1,0 +1,107 @@
+.trademark:hover::after{
+    content: 'HTML code: &reg;';
+}
+.copyright:hover::after{
+    content: 'HTML code: &copy;';
+}
+
+.englishtrademark:hover::after{
+    content: 'HTML code: &trade;';
+}
+
+.euro:hover::after{
+    content: 'HTML code: &euro;';
+}
+
+.pound:hover::after{
+    content: 'HTML code: &pound;';
+}
+
+.yen:hover::after{
+    content: 'HTML code: &yen;';
+}
+.cent:hover::after{
+    content: 'HTML code: &cent;';
+}
+.delta:hover::after{
+    content: 'HTML code: &Delta;';
+}
+.uparrow:hover::after{
+    content: 'HTML code: &uparrow;';
+}
+.downarrow:hover::after{
+    content: 'HTML code: &downarrow;';
+}
+.rightarrow:hover::after{
+    content: 'HTML code: &rightarrow;';
+}
+.leftarrow:hover::after{
+    content: 'HTML code: &leftarrow;';
+}
+.invertedexclamation:hover::after{
+    content: 'HTML code: &iexcl;';
+}
+.invertedquestion:hover::after{
+    content: 'HTML code: &iquest;';
+}
+.brokenbar:hover::after{
+    content: 'HTML code: &brvbar;';
+}
+.sectionsign:hover::after{
+    content: 'HTML code: &sect;';
+}
+.feminineordinal:hover::after{
+    content: 'HTML code: &ordf;';
+}
+.masculineordinal:hover::after{
+    content: 'HTML code: &ordm;';
+}
+.doubleleftarrow:hover::after{
+    content: 'HTML code: &laquo;';
+}
+.doublerightarrow:hover::after{
+    content: 'HTML code: &raquo;';
+}
+.degreesign:hover::after{
+    content: 'HTML code: &deg;';
+}
+.plusorminus:hover::after{
+    content: 'HTML code: &plusmn;';
+}
+.divisionsign:hover::after{
+    content: 'HTML code: &divide;';
+}
+.multiplicationsign:hover::after{
+    content: 'HTML code: &times;';
+}
+.twosquared:hover::after{
+    content: 'HTML code: &sup2';
+}
+.threecubed:hover::after{
+    content: 'HTML code: &sup3;';
+}
+.microsign:hover::after{
+    content: 'HTML code: &micro;';
+}
+.pilcrowsign:hover::after{
+    content: 'HTML code: &para;';
+}
+.onequarter:hover::after{
+    content: 'HTML code: &frac14;';
+}
+.onehalf:hover::after{
+    content: 'HTML code: &frac12;';
+}
+.threequarters:hover::after{
+    content: 'HTML code: &frac34;';
+}
+
+.paragraph:hover::after{
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 10px 10px 0 10px;
+    color: var(--black);
+    top: -25px;
+    left: -150px;
+    padding: .3rem;
+}

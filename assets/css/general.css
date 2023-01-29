@@ -15,6 +15,9 @@
     --profile-color-darker-lightmode: rgba(0,0,0,.85);
     --border-lightmode: 1px solid rgba(0,0,0,.05);
 
+    --white: #fff;
+    --black: #000;
+
     --font-ubuntu: 'Ubuntu', sans-serif;
 }
 

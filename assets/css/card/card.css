@@ -12,7 +12,7 @@
 }
 
 .card.active{
-    height: 400px;
+    height: 330px;
 }
 
 .card.active .toggle--profile .toggle--profile__icon{

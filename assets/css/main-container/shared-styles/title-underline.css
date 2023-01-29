@@ -1,11 +1,9 @@
-.formatting--tags__title{
+.title{
     position: relative;
-    padding: 0 1rem;
-    margin: 1rem;
     display: inline-block;
 }
 
-.formatting--tags__title::after{
+.title::after{
     content: '';
     height: 3px;
     width: 100%;
@@ -15,10 +13,10 @@
     background-color: var(--color);
 }
 
-body.active .formatting--tags__title{
+body.active .title{
     color: var(--text-lightmode);
 }
 
-body.active .formatting--tags__title::after{
+body.active .title::after{
     background-color: var(--color-lightmode);
 }

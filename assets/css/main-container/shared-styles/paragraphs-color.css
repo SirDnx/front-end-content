@@ -1,0 +1,19 @@
+p{
+    width: fit-content;
+    color: var(--profile-color);
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+}
+
+p:hover{
+    color: var(--white);
+}
+
+body.active .p:hover{
+    color: var(--black);
+}
+
+body.active .p:hover::after{
+    color: var(--black);
+}
