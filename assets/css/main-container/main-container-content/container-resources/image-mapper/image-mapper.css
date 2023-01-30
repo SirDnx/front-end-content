@@ -1,9 +1,9 @@
-.main--tags{
+.image--mapper{
     grid-column: 1 / 1;
-    grid-row: 2 / 2;
+    grid-row: 4 / 4;
     border: 1px solid var(--bg-body);
 }
 
-body.active .main--tags{
+body.active .image--mapper{
     border-color: var(--bg-body-lightmode);
 }

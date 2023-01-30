@@ -1,9 +1,9 @@
-.main--tags{
+.palette{
     grid-column: 1 / 1;
     grid-row: 2 / 2;
     border: 1px solid var(--bg-body);
 }
 
-body.active .main--tags{
+body.active .palette{
     border-color: var(--bg-body-lightmode);
 }

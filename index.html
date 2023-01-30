@@ -30,12 +30,9 @@
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container--formatting-tags/paragraphs/paragraphs.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-symbol-codes/container-symbol-codes.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-symbol-codes/paragraphs/paragraphs.css">
-    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-emoticon/container-emoticon.css">
-    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-favicon/container-favicon.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/container-useful-tags.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/main-tags/main-tags.css">
     <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/other-tags/other-tags.css">
-    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-palette/container-palette.css">
     <link rel="stylesheet" href="assets/css/card/card.css">
     <link rel="stylesheet" href="assets/css/card/card-content/card-content.css">
     <link rel="stylesheet" href="assets/css/card/card-content/card-img.css">
@@ -56,6 +53,18 @@
     <link rel="stylesheet" href="assets/css/main-container/shared-styles/container.css">
     <link rel="stylesheet" href="assets/css/main-container/shared-styles/paragraphs-color.css">
     <link rel="stylesheet" href="assets/css/main-container/shared-styles/container-content.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-resources/container-resources.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-resources/emoticon/emoticon.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-resources/favicon/favicon.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-resources/palette/palette.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-resources/videos-images/videos-images.css">
+    <link rel="stylesheet" href="assets/css/main-container/shared-styles/link.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-resources/compress-images/compress-images.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-resources/image-editor/image-editor.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-resources/image-mapper/image-mapper.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-resources/unicode-character/unicode-character.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/other-tags/paragraph-common-tags.css">
+    <link rel="stylesheet" href="assets/css/main-container/main-container-content/container-useful-tags/main-tags/paragraph-useful-tags.css">
 </head>
 <body>
     <header id="toggleMenu" class="header">
@@ -69,26 +78,9 @@
                     </a>
                 </li>
                 <li class="header__list--item">
-                    <a data-link="emoticon" class="header__list--link" href="#">
+                    <a data-link="resources" class="header__list--link" href="#">
                         <span class="header__list--span"><ion-icon class="header__list--icon" name="happy-outline"></ion-icon></span>
-                        <span class="header__list--name">free emoticon</span>
-                    </a>
-                </li>
-                <li class="header__list--item" id=""><a data-link="favicon" class="header__list--link" href="#">
-                        <span class="header__list--span"><ion-icon class="header__list--icon" name="rocket-outline"></ion-icon></span>
-                        <span class="header__list--name">free favicon</span>
-                    </a>
-                </li>
-                <li class="header__list--item">
-                    <a data-link="palette" class="header__list--link" href="#">
-                        <span class="header__list--span"><ion-icon class="header__list--icon" name="color-palette-outline"></ion-icon></span>
-                        <span class="header__list--name">free color palette</span>
-                    </a>
-                </li>
-                <li class="header__list--item">
-                    <a data-link="useful" class="header__list--link" href="#">
-                        <span class="header__list--span"><ion-icon class="header__list--icon" name="pricetags-outline"></ion-icon></span>
-                        <span class="header__list--name">useful tags</span>
+                        <span class="header__list--name">resources</span>
                     </a>
                 </li>
             </ul>
@@ -98,7 +90,7 @@
         <section class="main--container__content">
             <section data-container="tags-container" class="container--formatting--tags container active">
                 <section  class="formatting--tags__content container-content">
-                    <h2 class="formatting--tags__title title">formatting tags</h2>
+                    <h2 class="title">formatting tags</h2>
                     <p class="formatting--paragraph superscript">superscript text: x<sup>2</sup></p>
                     <p class="formatting--paragraph subscript">subscript text: H<sub>2</sub>O</p>
                     <p class="formatting--paragraph marked"><mark style="background:blue;">marked text</mark></p>
@@ -110,7 +102,7 @@
                     <p class="formatting--paragraph big"><big>bigger text</big></p>
                 </section>
                 <section class="container--symbol--codes container-content">
-                    <h2 class="symbol--codes__title title">symbol codes:</h2>
+                    <h2 class="title">symbol codes:</h2>
                     <p class="paragraph trademark">trademark: &reg;</p>
                     <p class="paragraph copyright">copyright: &copy;</p>
                     <p class="paragraph englishtrademark">english trademark: &trade;</p>
@@ -143,61 +135,85 @@
                     <p class="paragraph onehalf">fraction one half: &frac12;</p>
                     <p class="paragraph threequarters">fraction three quarters: &frac34;</p>
                 </section>
-            </section>
-            <section data-container="emoticon-container" class="container--emoticon container container-content">
-                <h2 class="emoticon__title title">emoticon:</h2>
-                <a class="emoticon__link" href="https://emojipedia.org/" target="_blank" rel="external" title="go to website">emojipedia</a>
-            </section>
-            <section data-container="favicon-container" class="container--favicon container container-content">
-                <h2 class="favicon__title title">favicon:</h2>
-                <ul class="favicon__list">
-                    <li class="favicon__list--item"><a class="favicon__list--link" href="https://iconarchive.com/" target="_blank" rel="external" title="go to website">Icon Archive</a>
-                    <li class="favicon__list--item"><a class="favicon__list--link" href="https://www.favicon.cc/" target="_blank" rel="external" title="go to website">Favicon cc</a>
-                    <li class="favicon__list--item"><a class="favicon__list--link" href="https://favicon.io/" target="_blank" rel="external" title="go to website">Favicon.io</a>
-                </ul>
-            </section>
-            <section data-container="useful-container" class="container--useful--tags lightmode container">
                 <section class="main--tags container-content">
-                    <h2 class="useful--tags__title title">useful tags:</h2>
-                    <p>
-                        <code>
-                            <pre>
-                                name = input('What's your name? ')
-                                print(f'Hello, {name}!')
-                            </pre>
-                        </code>
-                    </p>
-                    <p><q>Many of life's failures are people who did not realize how close they were to success when they gave up</q></p>
-                    <p><abbr title="Cascading Style Sheet">CSS</abbr></p>
-                    <p><cite>Star Trek</cite></p>
-                    <p><bdo dir="rtl">inverted text</bdo></p>
-                    <p><address>Saint Germain Street</address></p>
+                    <h2 class="title">useful tags:</h2>
+                    <p class="paragraph__useful--tags q"><q>Many of life's failures are people who did not realize how close they were to success when they gave up</q></p>
+                    <p class="paragraph__useful--tags abbr"><abbr title="Cascading Style Sheet">CSS</abbr></p>
+                    <p class="paragraph__useful--tags cite"><cite>Star Trek</cite></p>
+                    <p class="paragraph__useful--tags bdo"><bdo dir="rtl">inverted text</bdo></p>
+                    <p class="paragraph__useful--tags address" style="display:inline;">my address is: <address style="display:inline;">Saint Germain Street</address></p>
                 </section>
                 <section class="other--tags container-content">
                     <h2 class="title">common tags</h2>
-                    <p>&lt;video&gt;&lt;/video&gt;</p>
-                    <p>&lt;audio&gt;&lt;/audio&gt;</p>
-                    <p>&lt;meta&gt;</p>
-                    <p>&lt;iframe&gt;</p>
-                    <p>&lt;select&gt; and &lt;option&gt;</p>
-                    <p>&lt;form&gt;&lt;/form&gt;</p>
-                    <p>&lt;legend&gt;&lt;/legend&gt;</p>
-                    <p>&lt;fieldset&gt;&lt;/fieldset&gt;</p>
-                    <p>&lt;svg&gt;&lt;/svg&gt;</p>
-                    <p>&lt;figure&gt;&lt;/figure&gt;</p>
-                    <p>&lt;figcaption&gt;&lt;/figcaption&gt;</p>
-                    <p>&lt;track&gt;&lt;/track&gt;</p>
+                    <p class="paragraph__common--tags video">&lt;video&gt;&lt;/video&gt;</p>
+                    <p class="paragraph__common--tags audio">&lt;audio&gt;&lt;/audio&gt;</p>
+                    <p class="paragraph__common--tags meta">&lt;meta&gt;</p>
+                    <p class="paragraph__common--tags iframe">&lt;iframe&gt;</p>
+                    <p class="paragraph__common--tags select">&lt;select&gt; and &lt;option&gt;</p>
+                    <p class="paragraph__common--tags form">&lt;form&gt;&lt;/form&gt;</p>
+                    <p class="paragraph__common--tags legend">&lt;legend&gt;&lt;/legend&gt;</p>
+                    <p class="paragraph__common--tags fieldset">&lt;fieldset&gt;&lt;/fieldset&gt;</p>
+                    <p class="paragraph__common--tags svg">&lt;svg&gt;&lt;/svg&gt;</p>
+                    <p class="paragraph__common--tags figure">&lt;figure&gt;&lt;/figure&gt;</p>
+                    <p class="paragraph__common--tags figcaption">&lt;figcaption&gt;&lt;/figcaption&gt;</p>
+                    <p class="paragraph__common--tags track">&lt;track&gt;&lt;/track&gt;</p>
+                    <p class="paragraph__common--tags code">&lt;code&gt;&lt;/code&gt;</p>
+                    <p class="paragraph__common--tags pre">&lt;pre&gt;&lt;/pre&gt;</p>
                 </section>
-            </section>    
-            <section data-container="palette-container" class="container--palette container container-content">
-                <h2 class="palette__title title">palette:</h2>
-                <ul>
-                    <li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external" title="go to website">Color.Adobe.com</a></li>
-                    <li><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="external" title="go to website">Paletton</a></li>
-                    <li><a href="https://coolors.co/" target="_blank" rel="external" title="go to website">Coolors</a></li>
-                    <li><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-br" target="_blank" rel="external" title="go to website" class="links">Colorzilla extension</a></li>
-                </ul>
             </section>
+            <section data-container="resources-container" class="container--resources container">
+                <section class="container-content emoticon">
+                    <h2 class="title">emoticon:</h2>
+                    <a class="link" href="https://emojipedia.org/" target="_blank" rel="external" title="go to website">emojipedia</a>
+                    <a class="link" href="https://www.flaticon.com/br/" target="_blank" rel="external" title="go to website">flaticon</a>
+                    <a class="link" href="https://icons8.com.br/" target="_blank" rel="external" title="go to website">icons8</a>
+                </section>
+                <section class="container-content favicon">
+                    <h2 class="title">favicon:</h2>
+                    <ul>
+                        <li><a class="link" href="https://iconarchive.com/" target="_blank" rel="external" title="go to website">icon archive</a>
+                        <li><a class="link" href="https://www.favicon.cc/" target="_blank" rel="external" title="go to website">favicon cc</a>
+                        <li><a class="link" href="https://favicon.io/" target="_blank" rel="external" title="go to website">favicon.io</a>
+                    </ul>
+                </section>
+                <section class="container-content palette">
+                    <h2 class="title">palette:</h2>
+                    <ul>
+                        <li><a class="link" href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external" title="go to website">Color.Adobe.com</a></li>
+                        <li><a class="link" href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="external" title="go to website">Paletton</a></li>
+                        <li><a class="link" href="https://coolors.co/" target="_blank" rel="external" title="go to website">Coolors</a></li>
+                        <li><a class="link" href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-br" target="_blank" rel="external" title="go to website">Colorzilla extension</a></li>
+                    </ul>
+                </section>
+                <section class="container-content videos--images">
+                    <H2 class="title">free videos and images:</H2>
+                    <ul>
+                        <li><a class="link" href="https://www.pexels.com/pt-br/" target="_blank" rel="external" title="go to website">pexels</a></li>
+                        <li><a class="link" href="https://pixabay.com/pt/" target="_blank" rel="external" title="go to website">pixabay</a></li>
+                        <li><a class="link" href="https://br.freepik.com/" target="_blank" rel="external" title="go to website">freepik</a></li>
+                    </ul>
+                </section>
+                <section class="container-content compress--images">
+                    <h2 class="title">sites to compress images:</h2>
+                    <ul>
+                        <li><a class="link" href="https://www.easy-resize.com/pt/" target="_blank" rel="external" title="go to website">easy resize</a></li>
+                        <li><a class="link" href="https://tinypng.com/" target="_blank" rel="external" title="go to website">tinyPNG</a></li>
+                        <li><a class="link" href="https://compressjpeg.com/pt/" target="_blank" rel="external" title="go to website">compressjpeg</a></li>
+                    </ul>
+                </section>
+                <section class="container-content image--editor">
+                    <h2 class="title">browser free image editor</h2>
+                    <a class="link" href="https://www.photopea.com/" target="_blank" rel="external" title="go to website">photopea</a>
+                </section>
+                <section class="container-content image--mapper">
+                    <h2 class="title">image link mapper</h2>
+                    <a class="link" href="https://www.image-map.net/" target="_blank" rel="external" title="go to website">image map</a>
+                </section>
+                <section class="container-content unicode--character">
+                    <h2 class="title">site to get unicode character</h2>
+                    <a class="link" href="https://unicode-table.com/en/" rel="external" target="_blank" title="go to website">unicode table</a>
+                </section>
+            </section>   
         </section>
     </main>
     <section id="cardProfile" class="card">

@@ -1,0 +1,66 @@
+.video:hover::after{
+    content: 'possible parameters example: poster="image url" | controls (activate video controls) | disablepictureinpicture | constrolsList="nodownload/nofullscreen" | type="video/mp4" | autoplay | loop | muted | preload ...';
+}
+
+.audio:hover::after{
+    content: 'possible parameters example: controls | controlsList="nodownload" | type="audio/mp3" | autoplay | loop | muted | preload';
+}
+
+.meta:hover::after{
+    content: "this tag must go in the head of HTML document. <meta name='author' content='Daniel Moraes'> | <meta name='description' content='that short description that appears in every site's link'> | <meta name='keywords' content='keywords that will help search engines, separated by comma'>";
+}
+
+.iframe:hover::after{
+    content: "with this tag it's possible to show other HTML documents inside your page without being redirected. Using src='document link' parameter";
+}
+
+.select:hover::after{
+    content: "used for creating a input with a specific number of options. Tag <option> must be the child with the string inside and with parameter name='', which will be the value sent when submit is pressed";
+}
+
+.form:hover::after{
+    content: "used for creating forms like login. It has parameters like: action='' and method='' that will send the data captured from the inputs to the Back-End engine";
+}
+
+.legend:hover::after{
+    content: "it's used for titles in the form";
+}
+
+.fieldset:hover::after{
+    content: "it's used to separete content in the form";
+}
+
+.svg:hover::after{
+    content: "usually used to insert icons in the HTML document, but can also be used for creating your own icon";
+}
+
+.figure:hover::after{
+    content: "it can be used to involve tags <img> and <figcaption>";
+}
+
+.figcaption:hover::after{
+    content: "used to attach a descripion to a image";
+}
+
+.track:hover::after{
+    content: "used to add subtitle to videos. Parameter src='subtitle source' | srclang='pt-br' | label='Português(Brasil)'";
+}
+
+.code:hover::after{
+    content: 'used for displaying a piece of code in the browser';
+}
+
+.pre:hover::after{
+    content: "used for displaying a text pre formatted, the text inside this tag will be displayed as it is in the HTML document. Whitespaces and etc...";
+}
+
+.paragraph__common--tags:hover::after{
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 10px 10px 0 10px;
+    color: var(--black);
+    top: -25px;
+    left: -400px;
+    width: 400px;
+    padding: .3rem;
+}

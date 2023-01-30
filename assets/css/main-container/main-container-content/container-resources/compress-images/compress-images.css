@@ -1,9 +1,9 @@
-.main--tags{
+.compress--images{
     grid-column: 1 / 1;
-    grid-row: 2 / 2;
+    grid-row: 3 / 3;
     border: 1px solid var(--bg-body);
 }
 
-body.active .main--tags{
+body.active .compress--images{
     border-color: var(--bg-body-lightmode);
 }

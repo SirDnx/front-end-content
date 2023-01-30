@@ -1,9 +1,9 @@
-.other--tags{
+.image--editor{
     grid-column: 2 / 2;
-    grid-row: 2 / 2;
+    grid-row: 3 / 3;
     border: 1px solid var(--bg-body);
 }
 
-body.active .other--tags{
+body.active .image--editor{
     border-color: var(--bg-body-lightmode);
 }

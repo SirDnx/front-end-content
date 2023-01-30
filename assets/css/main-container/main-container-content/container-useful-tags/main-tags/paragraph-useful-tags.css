@@ -1,0 +1,31 @@
+.q:hover:after{
+    content: "tag <q></q>, used to insert quotes into your page. The text inside will be wrapped in quotation marks";
+}
+
+.abbr:hover::after{
+    content: "tag <abbr></abbr> used to insert abbreviation with parameter title='', which receives the complete word";
+}
+
+.cite:hover::after{
+    content: "tag <cite></cite>, used for citation of famous works";
+}
+
+.bdo:hover::after{
+    content: "<bdo></bdo> is used to invert the text inside. It goes with paramenter dir='', which can receive ltr(left to right) or rtl(right to left)";
+}
+
+.address:hover::after{
+    content: "<address></address> is used to wrap e-mail, or even physical address";
+}
+
+.paragraph__useful--tags:hover::after{
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 10px 10px 10px 0px;
+    color: var(--black);
+    top: -25px;
+    right: -400px;
+    width: 400px;
+    padding: .3rem;
+    z-index: 1;
+}

@@ -8,10 +8,11 @@ p{
 
 p:hover{
     color: var(--white);
+    text-decoration: underline;
 }
 
-body.active .p:hover{
-    color: var(--black);
+body.active p:hover{
+    color: var(--color-lightmode);
 }
 
 body.active .p:hover::after{

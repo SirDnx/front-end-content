@@ -1,0 +1,8 @@
+.container--resources{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.container--resources.active{
+    display: grid;
+}

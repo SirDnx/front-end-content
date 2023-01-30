@@ -7,9 +7,9 @@
     --profile-color: #cdcdcd;
     --profile-color-darker: #999999;
 
-    --bg-container-lightmode: #b4b0b0;
+    --bg-container-lightmode: #eae9e9;
     --bg-body-lightmode: #fff;
-    --color-lightmode: blue;
+    --color-lightmode: purple;
     --text-lightmode: rgba(0,0,0,.75);
     --profile-color-lightmode: gray;
     --profile-color-darker-lightmode: rgba(0,0,0,.85);
@@ -44,6 +44,6 @@ body.active{
     background-color: var(--bg-body-lightmode);
 }
 
-body.active p, body.active small, body.active sub, body.active sup, body.active strong, body.active em, body.active del, body.active ins, body.active a, body.active code, body.active pre, body.active q, body.active abbr{
-    color: var(--text-lightmode);
+body.active p, body.active small, body.active sub, body.active sup, body.active strong, body.active em, body.active del, body.active ins, body.active a, body.active code, body.active pre, body.active q, body.active abbr, body.active big, body.active cite, body.active bdo, body.active address{
+    color: var(--black);
 }

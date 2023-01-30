@@ -1,9 +1,9 @@
-.other--tags{
+.unicode--character{
     grid-column: 2 / 2;
-    grid-row: 2 / 2;
+    grid-row: 4 / 4;
     border: 1px solid var(--bg-body);
 }
 
-body.active .other--tags{
+body.active .unicode--character{
     border-color: var(--bg-body-lightmode);
 }
