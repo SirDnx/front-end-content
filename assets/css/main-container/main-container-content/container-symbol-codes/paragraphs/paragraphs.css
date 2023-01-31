@@ -106,3 +106,12 @@
     padding: .3rem;
     z-index: 1;
 }
+@media screen and (max-width: 880px){
+    .paragraph:hover::after{
+        right: 0;
+        left: 0;
+        top: -40px;
+        min-width: 200px;
+        width: 100%;
+    }
+}
