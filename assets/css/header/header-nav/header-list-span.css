@@ -8,3 +8,16 @@
     position: relative;
     text-align: center;
 }
+
+@media screen and (max-width: 1405px){
+    .header__list--span{
+        position: initial;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .header__list--span{
+        min-width: 30px;
+        height: 30px;
+    }
+}

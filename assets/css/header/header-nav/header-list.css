@@ -6,3 +6,14 @@
     top: 0;
     width: 100%;
 }
+
+@media screen and (max-width: 1405px){
+    .header__list{
+        padding-left: 0;
+        position: initial;
+        display: block;
+        height: 70px;
+        margin-top: 0;
+    }
+}
+

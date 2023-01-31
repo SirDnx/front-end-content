@@ -42,5 +42,6 @@
     top: -25px;
     right: -150px;
     padding: .3rem;
+    z-index: 1;
 }
 

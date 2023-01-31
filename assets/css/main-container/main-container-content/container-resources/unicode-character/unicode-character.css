@@ -7,3 +7,10 @@
 body.active .unicode--character{
     border-color: var(--bg-body-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .unicode--character{
+        grid-column: 1 / 1;
+        grid-row: 8 / 8;
+    }
+}

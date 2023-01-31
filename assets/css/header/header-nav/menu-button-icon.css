@@ -5,3 +5,9 @@
 body.active .menu--button__icon{
     color: var(--text-lightmode);
 }
+
+@media screen and (max-width: 1405px){
+    .menu--button__icon{
+        display: none;
+    }
+}

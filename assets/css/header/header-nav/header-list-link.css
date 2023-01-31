@@ -6,3 +6,15 @@
     width: 100%;
 }
 
+@media screen and (max-width: 1405px){
+    .header__list--link{
+        position: initial;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .header__list--link{
+        padding: 0 .5rem;
+    }
+}

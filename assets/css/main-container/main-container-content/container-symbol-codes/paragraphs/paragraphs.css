@@ -104,4 +104,5 @@
     top: -25px;
     left: -150px;
     padding: .3rem;
+    z-index: 1;
 }

@@ -25,4 +25,53 @@ body.active .card{
     border: var(--border-lightmode);
 }
 
+@media screen and (max-width: 1565px){
+    .responsive--container{
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .card{
+        left: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .card{
+        left: 40px;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .responsive--container{
+        position: absolute;
+        top: 90px;
+        left: 0;
+    }
+
+    .card{
+        position: absolute;
+        left: 10px;
+        top: 0;
+        box-shadow: none;
+ 
+    }
+
+    body.active .card{
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 445px){
+    .card{
+        top: 60px;
+        width: 94%;
+    }
+}
+
+
 

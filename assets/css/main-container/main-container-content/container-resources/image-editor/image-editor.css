@@ -7,3 +7,10 @@
 body.active .image--editor{
     border-color: var(--bg-body-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .image--editor{
+        grid-column: 1 / 1;
+        grid-row: 7 / 7;
+    }
+}

@@ -9,8 +9,21 @@
     font-size: 1.2rem;
 }
 
-
-
 body.active .header__list--name{
     color: var(--text-lightmode);
+}
+
+@media screen and (max-width: 1405px){
+    .header__list--name{
+        position: initial;
+        white-space: initial;
+        display: inline-block;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .header__list--name{
+        font-size: 1rem;
+    }
 }

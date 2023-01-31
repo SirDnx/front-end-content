@@ -7,3 +7,10 @@
 body.active .compress--images{
     border-color: var(--bg-body-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .compress--images{
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+}

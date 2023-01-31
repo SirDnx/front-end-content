@@ -7,3 +7,11 @@
 body.active .other--tags{
     border-color: var(--bg-body-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .other--tags{
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+}
+

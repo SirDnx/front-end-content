@@ -7,3 +7,10 @@
 body.active .formatting--tags__content{
     border-color: var(--bg-body-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .formatting--tags__content{
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+}

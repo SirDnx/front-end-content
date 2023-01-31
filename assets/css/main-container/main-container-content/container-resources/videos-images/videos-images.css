@@ -7,3 +7,10 @@
 body.active .videos--images{
     border-color: var(--bg-body-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .videos--images{
+        grid-column: 1 / 1;
+        grid-row: 6 / 6;
+    }
+}

@@ -9,3 +9,9 @@
     cursor: pointer;
     transition: .3s all ease;
 }
+
+@media screen and (max-width: 1405px){
+    .header__menu--button{
+        display: none;
+    }
+}

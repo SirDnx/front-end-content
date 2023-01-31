@@ -7,6 +7,13 @@
 
 body.active .container--symbol--codes{
     border-color: var(--bg-body-lightmode);
-    
 }
+
+@media screen and (max-width: 675px){
+    .container--symbol--codes{
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+}
+
 

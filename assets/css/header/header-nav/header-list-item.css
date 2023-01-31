@@ -55,3 +55,43 @@ body.active .header__list--item.active a::after{
     background-color: var(--bg-container-lightmode);
 
 }
+
+@media screen and (max-width: 1405px){
+    .header__list--item{
+        position: initial;
+        display: inline-block;
+        z-index: 5;
+        min-width: 200px;
+        height: 70px;
+        border-radius: 0;
+        padding: 0 1rem;
+    }
+    
+    .header__list--item.active a::before{
+        display: none;
+    }
+    
+    .header__list--item.active a::after{
+        display: none;
+    }
+    
+    body.active .header__list--item{
+        border: 0;
+    }
+
+    body.active .header__list--item.active a::before{
+        box-shadow: 0;
+    }
+    
+    body.active .header__list--item.active a::after{
+        box-shadow: 0; 
+    }
+}
+
+@media screen and (max-width: 675px){
+    .header__list--item{
+        padding: 0;
+        min-width: 0;
+        width: fit-content;
+    }
+}

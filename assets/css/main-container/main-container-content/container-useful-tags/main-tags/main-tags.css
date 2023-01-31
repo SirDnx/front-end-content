@@ -7,3 +7,10 @@
 body.active .main--tags{
     border-color: var(--bg-body-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .main--tags{
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+}

@@ -2,7 +2,8 @@
     width: 100%;
     max-width: 900px;
     height: 100%;
-    max-height: 90vh;
+    max-height: 680px;
+    min-height: 650px;
     background-color: var(--bg-container);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -13,3 +14,22 @@
 body.active .container{
     background-color: var(--bg-container-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .container--formatting--tags, .container--resources{
+        position: absolute;
+        top: 220px;
+        left: 0;
+        max-height: auto;
+        min-height: 200vh;
+    }
+
+}
+
+@media screen and (max-width: 445px){
+    .container--formatting--tags, .container--resources{
+        top: 300px;
+        min-height: 220vh;
+    }
+}
+

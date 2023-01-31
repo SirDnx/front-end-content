@@ -5,3 +5,9 @@
 body.active .header__list--icon{
     color: var(--text-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .header__list--icon{
+        font-size: 1.5rem;
+    }
+}

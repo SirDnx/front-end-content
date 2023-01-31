@@ -7,3 +7,10 @@
 body.active .image--mapper{
     border-color: var(--bg-body-lightmode);
 }
+
+@media screen and (max-width: 675px){
+    .image--mapper{
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+}

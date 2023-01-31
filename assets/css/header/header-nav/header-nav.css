@@ -1,5 +1,11 @@
 .header__nav{
-    left: 0;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
+}
+
+
+@media screen and (max-width: 1405px){
+    .header__nav{
+        height: 70px;
+    }
 }

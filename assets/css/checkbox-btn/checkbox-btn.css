@@ -39,3 +39,34 @@
     background-color: red;
     font-weight: bold;
 }
+
+@media screen and (max-width: 1565px){
+    .checkbox--btn{
+        right: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .checkbox--btn{
+        right: 40PX;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .checkbox--btn{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 445px){
+    .checkbox--btn{
+        top: 0;
+        left: 10px;
+    }
+}
+
+

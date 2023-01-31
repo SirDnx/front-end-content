@@ -63,4 +63,5 @@
     left: -400px;
     width: 400px;
     padding: .3rem;
+    z-index: 1;
 }
